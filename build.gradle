@@ -1,0 +1,24 @@
+buildscript {
+   ext.kotlin_version = '1.0.6'
+
+   repositories {
+     mavenCentral()
+   }
+
+   dependencies {
+     classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+   }
+}
+
+apply plugin: 'kotlin'
+apply plugin: 'application'
+
+mainClassName = 'com.zenika.java.HelloKotlin'
+
+repositories {
+     mavenCentral()
+}
+
+dependencies {
+    compile 'org.jetbrains.kotlin:kotlin-stdlib:1.0.6'
+}
